@@ -23,17 +23,17 @@ Pod::Spec.new do |s|
 
   #正则
   s.subspec "Regex" do |ss|
-    ss.source_files = 'TFShare/Classes/Regex/**/*.{h,m}'
+    ss.source_files = 'YSCategory/Classes/Regex/**/*.{h,m}'
   end
 
   #frame
   s.subspec "CGRect" do |ss|
-    ss.source_files = 'TFShare/Classes/CGRect/**/*.{h,m}'
+    ss.source_files = 'YSCategory/Classes/CGRect/**/*.{h,m}'
   end
 
   #字符串操作
   s.subspec "NSString" do |ss|
-    ss.source_files = 'TFShare/Classes/NSString/**/*.{h,m}'
+    ss.source_files = 'YSCategory/Classes/NSString/**/*.{h,m}'
   end
 
 end
