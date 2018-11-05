@@ -8,14 +8,14 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YSCategory'
-  s.summary          = '常用分类整理'
+  s.summary          = 'A set of categorys to make iOS development easier.'
   s.version          = '0.0.1'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'yuanxd' => 'yuansir_ios@163.com' }
-  s.homepage         = 'https://gitee.com/yuansirios/YSCategory'
+  s.homepage         = 'https://github.com/yuansirios/YSCategory.git'
   s.platform         = :ios, '6.0'
   s.ios.deployment_target = '6.0'
-  s.source           = { :git => 'https://gitee.com/yuansirios/YSCategory.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/yuansirios/YSCategory.git', :tag => s.version.to_s }
 
   s.requires_arc = true
   s.source_files = 'YSCategory/**/*.{h,m}'
