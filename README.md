@@ -22,7 +22,7 @@ pod 'YSCategory'
 
 ## Author
 
-yuansirios, yuanxd25114@hsjry.com
+yuansirios, yuansir_ios@163.com
 
 ## License
 
