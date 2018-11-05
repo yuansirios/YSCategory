@@ -1,0 +1,28 @@
+{
+  "name": "YSCategory",
+  "summary": "常用分类整理",
+  "version": "0.1.0",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "yuanxd": "yuansir_ios@163.com"
+  },
+  "homepage": "https://github.com/yuansirios/YSCategory",
+  "platforms": {
+    "ios": "6.0"
+  },
+  "source": {
+    "git": "https://github.com/yuansirios/YSCategory.git",
+    "tag": "0.1.0"
+  },
+  "requires_arc": true,
+  "source_files": "YSCategory/**/*.{h,m}",
+  "public_header_files": "YSCategory/**/*.{h}",
+  "frameworks": [
+    "UIKit",
+    "CoreFoundation",
+    "QuartzCore"
+  ]
+}

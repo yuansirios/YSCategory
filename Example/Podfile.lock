@@ -1,0 +1,16 @@
+PODS:
+  - YSCategory (0.1.0)
+
+DEPENDENCIES:
+  - YSCategory (from `../`)
+
+EXTERNAL SOURCES:
+  YSCategory:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  YSCategory: 2805b1ce01009f33e578328b6d76726ff05034a4
+
+PODFILE CHECKSUM: 2fd55023a8df273b5035b9afd6d69677bf20e946
+
+COCOAPODS: 1.2.0
