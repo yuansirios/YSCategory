@@ -1,15 +1,16 @@
 # YSCategory
 
-[![CI Status](https://img.shields.io/travis/yuansirios/YSCategory.svg?style=flat)](https://travis-ci.org/yuansirios/YSCategory)
 [![Version](https://img.shields.io/cocoapods/v/YSCategory.svg?style=flat)](https://cocoapods.org/pods/YSCategory)
 [![License](https://img.shields.io/cocoapods/l/YSCategory.svg?style=flat)](https://cocoapods.org/pods/YSCategory)
 [![Platform](https://img.shields.io/cocoapods/p/YSCategory.svg?style=flat)](https://cocoapods.org/pods/YSCategory)
 
 ## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
+*   CGRect
+       * UIView+YSAddtion.h
+*   NSString
+       * NSString+YSAddtion.h
+*   Regex
+       * NSString+YSRegexKit.h
 
 ## Installation
 

@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'YSCategory'
   s.summary          = 'A set of categorys to make iOS development easier.'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'yuanxd' => 'yuansir_ios@163.com' }
   s.homepage         = 'https://github.com/yuansirios/YSCategory.git'
