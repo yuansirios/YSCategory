@@ -9,20 +9,29 @@
   "authors": {
     "yuanxd": "yuansir_ios@163.com"
   },
-  "homepage": "https://github.com/yuansirios/YSCategory",
+  "homepage": "https://gitee.com/yuansirios/YSCategory",
   "platforms": {
     "ios": "6.0"
   },
   "source": {
-    "git": "https://github.com/yuansirios/YSCategory.git",
+    "git": "https://gitee.com/yuansirios/YSCategory.git",
     "tag": "0.1.0"
   },
   "requires_arc": true,
   "source_files": "YSCategory/**/*.{h,m}",
   "public_header_files": "YSCategory/**/*.{h}",
-  "frameworks": [
-    "UIKit",
-    "CoreFoundation",
-    "QuartzCore"
+  "subspecs": [
+    {
+      "name": "Regex",
+      "source_files": "TFShare/Classes/Regex/**/*.{h,m}"
+    },
+    {
+      "name": "CGRect",
+      "source_files": "TFShare/Classes/CGRect/**/*.{h,m}"
+    },
+    {
+      "name": "NSString",
+      "source_files": "TFShare/Classes/NSString/**/*.{h,m}"
+    }
   ]
 }

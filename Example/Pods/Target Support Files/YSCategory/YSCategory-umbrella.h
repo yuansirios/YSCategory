@@ -12,6 +12,7 @@
 
 #import "UIView+YSAddtion.h"
 #import "NSString+YSAddtion.h"
+#import "NSString+YSRegexKit.h"
 
 FOUNDATION_EXPORT double YSCategoryVersionNumber;
 FOUNDATION_EXPORT const unsigned char YSCategoryVersionString[];

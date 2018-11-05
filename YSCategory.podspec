@@ -21,6 +21,19 @@ Pod::Spec.new do |s|
   s.source_files = 'YSCategory/**/*.{h,m}'
   s.public_header_files = 'YSCategory/**/*.{h}'
 
-  s.frameworks = 'UIKit', 'CoreFoundation' ,'QuartzCore'
+  #正则
+  s.subspec "Regex" do |ss|
+    ss.source_files = 'TFShare/Classes/Regex/**/*.{h,m}'
+  end
+
+  #frame
+  s.subspec "CGRect" do |ss|
+    ss.source_files = 'TFShare/Classes/CGRect/**/*.{h,m}'
+  end
+
+  #字符串操作
+  s.subspec "NSString" do |ss|
+    ss.source_files = 'TFShare/Classes/NSString/**/*.{h,m}'
+  end
 
 end

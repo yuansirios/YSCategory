@@ -7,8 +7,9 @@
 //
 
 #import "YSAppDelegate.h"
-#import <YSCategory/NSString+YSAddtion.h>
 #import <YSCategory/UIView+YSAddtion.h>
+#import <YSCategory/NSString+YSAddtion.h>
+#import <YSCategory/NSString+YSRegexKit.h>
 
 @implementation YSAppDelegate
 
