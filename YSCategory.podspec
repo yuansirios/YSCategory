@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'YSCategory'
   s.summary          = '常用分类整理'
-  s.version          = '0.1.0'
+  s.version          = '0.0.1'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'yuanxd' => 'yuansir_ios@163.com' }
   s.homepage         = 'https://gitee.com/yuansirios/YSCategory'
