@@ -9,9 +9,9 @@
 
 @implementation NSString (YSAddtion)
 
-#pragma mark - Drawing
+#pragma mark - *********** Drawing ***********
 
-- (CGSize)sizeForFont:(UIFont *)font size:(CGSize)size mode:(NSLineBreakMode)lineBreakMode {
+- (CGSize)ys_sizeForFont:(UIFont *)font size:(CGSize)size mode:(NSLineBreakMode)lineBreakMode {
     CGSize result;
     if (!font) font = [UIFont systemFontOfSize:12];
     if ([self respondsToSelector:@selector(boundingRectWithSize:options:attributes:context:)]) {
@@ -35,19 +35,43 @@
     return result;
 }
 
-- (CGFloat)widthForFont:(UIFont *)font {
-    CGSize size = [self sizeForFont:font size:CGSizeMake(HUGE, HUGE) mode:NSLineBreakByWordWrapping];
+- (CGFloat)ys_widthForFont:(UIFont *)font {
+    CGSize size = [self ys_sizeForFont:font size:CGSizeMake(HUGE, HUGE) mode:NSLineBreakByWordWrapping];
     return size.width;
 }
 
-- (CGFloat)heightForFont:(UIFont *)font width:(CGFloat)width {
-    CGSize size = [self sizeForFont:font size:CGSizeMake(width, HUGE) mode:NSLineBreakByWordWrapping];
+- (CGFloat)ys_heightForFont:(UIFont *)font width:(CGFloat)width {
+    CGSize size = [self ys_sizeForFont:font size:CGSizeMake(width, HUGE) mode:NSLineBreakByWordWrapping];
     return size.height;
+}
+
+#pragma mark - *********** Range ***********
+
+- (NSArray <NSValue *> *)ys_rangesOfString:(NSString *)searchString options:(NSStringCompareOptions)mask serachRange:(NSRange)range {
+    
+    NSMutableArray *array = [NSMutableArray array];
+    [self ys_rangeOfString:searchString range:NSMakeRange(0, self.length) array:array options:mask];
+    
+    return array;
+}
+
+- (void)ys_rangeOfString:(NSString *)searchString
+                   range:(NSRange)searchRange
+                   array:(NSMutableArray *)array
+                 options:(NSStringCompareOptions)mask {
+    NSRange range = [self rangeOfString:searchString options:mask range:searchRange];
+    if (range.location != NSNotFound) {
+        [array addObject:[NSValue valueWithRange:range]];
+        [self ys_rangeOfString:searchString
+                         range:NSMakeRange(range.location + range.length, self.length - (range.location + range.length))
+                         array:array
+                       options:mask];
+    }
 }
 
 #pragma mark - *********** 文件读取 ***********
 
-+ (NSString *)stringNamed:(NSString *)name {
++ (NSString *)ys_stringNamed:(NSString *)name {
     NSString *path = [[NSBundle mainBundle] pathForResource:name ofType:@""];
     NSString *str = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:NULL];
     if (!str) {
@@ -59,7 +83,7 @@
 
 #pragma mark - *********** 常用 ***********
 
-+ (NSString *)stringWithUUID {
++ (NSString *)ys_stringWithUUID {
     CFUUIDRef uuid = CFUUIDCreate(NULL);
     CFStringRef string = CFUUIDCreateString(NULL, uuid);
     CFRelease(uuid);
@@ -67,7 +91,7 @@
 }
 
 //通过url.query获取参数字符 再分成字典
-- (NSMutableDictionary *)getURLParameters{
+- (NSMutableDictionary *)ys_getURLParameters{
     if (!self.length) {
         return nil;
     }

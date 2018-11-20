@@ -1,11 +1,19 @@
 PODS:
-  - YSCategory (0.1.0):
-    - YSCategory/CGRect (= 0.1.0)
-    - YSCategory/NSString (= 0.1.0)
-    - YSCategory/Regex (= 0.1.0)
-  - YSCategory/CGRect (0.1.0)
-  - YSCategory/NSString (0.1.0)
-  - YSCategory/Regex (0.1.0)
+  - MBProgressHUD (1.1.0)
+  - YSCategory (0.0.3):
+    - YSCategory/CGRect (= 0.0.3)
+    - YSCategory/HUD (= 0.0.3)
+    - YSCategory/NSString (= 0.0.3)
+    - YSCategory/Regex (= 0.0.3)
+    - YSCategory/UIButton (= 0.0.3)
+    - YSCategory/UIImage (= 0.0.3)
+  - YSCategory/CGRect (0.0.3)
+  - YSCategory/HUD (0.0.3):
+    - MBProgressHUD (>= 1.1.0)
+  - YSCategory/NSString (0.0.3)
+  - YSCategory/Regex (0.0.3)
+  - YSCategory/UIButton (0.0.3)
+  - YSCategory/UIImage (0.0.3)
 
 DEPENDENCIES:
   - YSCategory (from `../`)
@@ -15,8 +23,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  YSCategory: 8a9d33b177bbea928d14b32c5b4bb11d9f9ef9c6
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  YSCategory: f8d2d2fb8d0cefa1b253483e04734a4904a0630f
 
-PODFILE CHECKSUM: 2fd55023a8df273b5035b9afd6d69677bf20e946
+PODFILE CHECKSUM: f7134e2bf4b60d582e7dc5aa358cf118609e91ce
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.2.1

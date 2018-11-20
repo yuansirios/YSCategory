@@ -1,6 +1,0 @@
-framework module Pods_YSCategory_Tests {
-  umbrella header "Pods-YSCategory_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}

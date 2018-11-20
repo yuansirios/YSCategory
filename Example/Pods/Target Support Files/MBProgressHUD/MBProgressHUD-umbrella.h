@@ -10,7 +10,8 @@
 #endif
 #endif
 
+#import "MBProgressHUD.h"
 
-FOUNDATION_EXPORT double Pods_YSCategory_TestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_YSCategory_TestsVersionString[];
+FOUNDATION_EXPORT double MBProgressHUDVersionNumber;
+FOUNDATION_EXPORT const unsigned char MBProgressHUDVersionString[];
 

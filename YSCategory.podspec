@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'YSCategory'
   s.summary          = 'A set of categorys to make iOS development easier.'
-  s.version          = '0.0.2'
+  s.version          = '0.0.3'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'yuanxd' => 'yuansir_ios@163.com' }
   s.homepage         = 'https://github.com/yuansirios/YSCategory.git'
@@ -34,6 +34,22 @@ Pod::Spec.new do |s|
   #字符串操作
   s.subspec "NSString" do |ss|
     ss.source_files = 'YSCategory/Classes/NSString/**/*.{h,m}'
+  end
+
+  #按钮
+  s.subspec "UIButton" do |ss|
+    ss.source_files = 'YSCategory/Classes/UIButton/**/*.{h,m}'
+  end
+
+  #图片
+  s.subspec "UIImage" do |ss|
+    ss.source_files = 'YSCategory/Classes/UIImage/**/*.{h,m}'
+  end
+
+  #HUD
+  s.subspec "HUD" do |ss|
+    ss.source_files = 'YSCategory/Classes/HUD/**/*.{h,m}'
+    ss.dependency 'MBProgressHUD', '>=1.1.0'
   end
 
 end

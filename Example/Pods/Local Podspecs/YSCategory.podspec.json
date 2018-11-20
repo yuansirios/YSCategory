@@ -1,7 +1,7 @@
 {
   "name": "YSCategory",
-  "summary": "常用分类整理",
-  "version": "0.1.0",
+  "summary": "A set of categorys to make iOS development easier.",
+  "version": "0.0.3",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -9,13 +9,13 @@
   "authors": {
     "yuanxd": "yuansir_ios@163.com"
   },
-  "homepage": "https://gitee.com/yuansirios/YSCategory",
+  "homepage": "https://github.com/yuansirios/YSCategory.git",
   "platforms": {
     "ios": "6.0"
   },
   "source": {
-    "git": "https://gitee.com/yuansirios/YSCategory.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/yuansirios/YSCategory.git",
+    "tag": "0.0.3"
   },
   "requires_arc": true,
   "source_files": "YSCategory/**/*.{h,m}",
@@ -23,15 +23,32 @@
   "subspecs": [
     {
       "name": "Regex",
-      "source_files": "TFShare/Classes/Regex/**/*.{h,m}"
+      "source_files": "YSCategory/Classes/Regex/**/*.{h,m}"
     },
     {
       "name": "CGRect",
-      "source_files": "TFShare/Classes/CGRect/**/*.{h,m}"
+      "source_files": "YSCategory/Classes/CGRect/**/*.{h,m}"
     },
     {
       "name": "NSString",
-      "source_files": "TFShare/Classes/NSString/**/*.{h,m}"
+      "source_files": "YSCategory/Classes/NSString/**/*.{h,m}"
+    },
+    {
+      "name": "UIButton",
+      "source_files": "YSCategory/Classes/UIButton/**/*.{h,m}"
+    },
+    {
+      "name": "UIImage",
+      "source_files": "YSCategory/Classes/UIImage/**/*.{h,m}"
+    },
+    {
+      "name": "HUD",
+      "source_files": "YSCategory/Classes/HUD/**/*.{h,m}",
+      "dependencies": {
+        "MBProgressHUD": [
+          ">=1.1.0"
+        ]
+      }
     }
   ]
 }
