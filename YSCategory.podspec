@@ -52,4 +52,9 @@ Pod::Spec.new do |s|
     ss.dependency 'MBProgressHUD', '>=1.1.0'
   end
 
+  #HUD
+  s.subspec "NSDecimalNumber" do |ss|
+   ss.source_files = 'YSCategory/Classes/NSDecimalNumber/**/*.{h,m}'
+  end
+
 end
