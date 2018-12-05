@@ -147,4 +147,19 @@
     return params;
 }
 
+#pragma mark - *********** 内容处理 ***********
+
++ (NSString *)ys_transformToPinYin{
+    //将NSString装换成NSMutableString
+    NSMutableString *pinyin = [self mutableCopy];
+    //将汉字转换为拼音(带音标)
+    CFStringTransform((__bridge CFMutableStringRef)pinyin, NULL, kCFStringTransformMandarinLatin, NO);
+    NSLog(@"%@", pinyin);
+    //去掉拼音的音标
+    CFStringTransform((__bridge CFMutableStringRef)pinyin, NULL, kCFStringTransformStripCombiningMarks, NO);
+    NSLog(@"%@", pinyin);
+    //返回最近结果
+    return pinyin;
+}
+
 @end

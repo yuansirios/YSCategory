@@ -44,6 +44,16 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (UIColor *)colorAtPoint:(CGPoint)point;
 
+
+/**
+ 图片上绘制文字
+
+ @param title 内容
+ @param fontSize 字体大小
+ @return 图片
+ */
+- (UIImage *)imageWithTitle:(NSString *)title fontSize:(CGFloat)fontSize;
+
 @end
 
 NS_ASSUME_NONNULL_END

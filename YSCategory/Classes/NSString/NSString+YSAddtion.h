@@ -43,6 +43,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSMutableDictionary *)ys_getURLParameters;
 
+#pragma mark - *********** 内容处理 ***********
+
++ (NSString *)ys_transformToPinYin;
+
 @end
 
 NS_ASSUME_NONNULL_END
